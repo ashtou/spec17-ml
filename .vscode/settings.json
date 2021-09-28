@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "venv/bin/python",
+    "python.formatting.provider": "black",
+    "editor.rulers": [
+        88
+    ],
+    "editor.formatOnSave": true,
+    "git.autofetch": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "jupyter.textOutputLimit": 0
+}
