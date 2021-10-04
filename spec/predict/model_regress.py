@@ -392,11 +392,11 @@ def check_scores(predictor, train_X, train_y, test_X, test_y, cv=None, verbose=F
     print("Num of features:", n_features)
     if cv is not None:
         print(
-            "Cross-validation MAE: {:.6f}".format(
+            "Cross-validation MAE: {:.4f}".format(
                 -np.mean(cv_dict["test_neg_mean_absolute_error"])
             )
         )
-        print("Cross-validation R2: {:.6f}".format(np.mean(cv_dict["test_r2"])))
+        print("Cross-validation R2: {:.4f}".format(np.mean(cv_dict["test_r2"])))
         if verbose:
             print("Cross-validation detailed results:")
             for res in cv_dict:
@@ -409,12 +409,17 @@ def check_scores(predictor, train_X, train_y, test_X, test_y, cv=None, verbose=F
     print("Prediction time:", round(t_ts1 - t_ts0, 4))
 
     print(
-        "MAE on Test:: {:.6f}".format(
+        "MAE on Test:: {:.4f}".format(
             metrics.mean_absolute_error(test_y, y_pred, multioutput="uniform_average")
         )
     )
     print(
-        "R2 on Test: {:.6f}".format(
+        "MAPE on Test:: {:.2f}%".format(
+            np.mean(mean_absolute_percentage_error(test_y, y_pred))
+        )
+    )
+    print(
+        "R2 on Test: {:.2f}".format(
             metrics.r2_score(test_y, y_pred, multioutput="uniform_average")
         )
     )
