@@ -8,5 +8,5 @@
     "git.autofetch": true,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "jupyter.textOutputLimit": 0
+    "notebook.output.textLineLimit": 500
 }
