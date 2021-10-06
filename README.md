@@ -1,10 +1,10 @@
-# spec17
+# spec17-ml
 
-Data Science and ML on SPEC CPU 2017 Benchmarks
+Comparative Analysis of Machine Learning Models for Performance Prediction of  SPEC CPU2017 Benchmarks
 
-## Python
+## Installation
 
-- ### Install version3.8 venv
+- ### Install Python3.8 venv
 
   `sudo apt-get install python3.8-venv`
 
@@ -18,8 +18,17 @@ Data Science and ML on SPEC CPU 2017 Benchmarks
 
   `sudo apt-get install python3.8-dev`
 
-## Manage project dependency
-
-- Install project dependencies
+- ### Install project dependencies
 
   `pip install -r requirements.txt`
+
+## Structure
+
+| Resource | Description |
+| --- | --- |
+| `spec/data` | contains the input data and a notebook to download the data from [SPEC CPU2017 published results](https://www.spec.org/cpu2017/results/cpu2017.html) |
+| `spec/predict` | contains Python scripts to store parameters, prepare data, select features, create models, and visualise results |
+| `spec/regress_01_explore.ipynb` | Jupyter notebook to load, clean and transform data |
+| `spec/regress_02_select.ipynb` | Jupyter notebook to select features |
+| `spec/regress_03_evaluate.ipynb` | Jupyter notebook to select models and evaluate them |
+| `spec/regress_related_work.ipynb` | Jupyter notebook to compare the results with related work |
