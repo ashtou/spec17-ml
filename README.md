@@ -32,3 +32,10 @@ Comparative Analysis of Machine Learning Models for Performance Prediction of  S
 | `spec/regress_02_select.ipynb` | Jupyter notebook to select features |
 | `spec/regress_03_evaluate.ipynb` | Jupyter notebook to select models and evaluate them |
 | `spec/regress_related_work.ipynb` | Jupyter notebook to compare the results with related work |
+
+
+## Publications
+
+- A. Tousi and M. Luján, "Comparative Analysis of Machine Learning Models for Performance Prediction of the SPEC Benchmarks," in _IEEE Access_, vol. 10, pp. 11994-12011, 2022, doi: 10.1109/ACCESS.2022.3142240 [[IEEE Open Access 2022](https://ieeexplore.ieee.org/document/9676614)]. If you use `spec17-ml` for your research, please cite this paper.
+
+This work was supported by EPSRC grants EP/T026995/1 EnnCore and EP/N035127/1 Lambda.
